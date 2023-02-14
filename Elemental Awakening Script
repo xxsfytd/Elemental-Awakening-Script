@@ -28,6 +28,7 @@ good.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 good.Position = UDim2.new(0.322701693, 0, 0.305220902, 0)
 good.Size = UDim2.new(0, 437, 0, 233)
 good.Draggable = true
+good.Active = true
 
 ddddd.Name = "ddddd"
 ddddd.Parent = good
@@ -100,9 +101,9 @@ Close.MouseButton1Click:Connect(function()
 	Open.Visible = true
 end)
 
-TextLabel.Parent = bababoi
+TextLabel.Parent = good
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.Position = UDim2.new(0.333020627, 0, 0.323293179, 0)
+TextLabel.Position = UDim2.new(0.0240961313, 0, 0.0400313735, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "elemental awakening"
@@ -110,9 +111,9 @@ TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
 
 LabelText.Name = "LabelText"
-LabelText.Parent = bababoi
+LabelText.Parent = good
 LabelText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LabelText.Position = UDim2.new(0.530018806, 0, 0.339357436, 0)
+LabelText.Position = UDim2.new(0.495693833, 0, 0.0732630044, 0)
 LabelText.Size = UDim2.new(0, 151, 0, 42)
 LabelText.Font = Enum.Font.SourceSans
 LabelText.Text = "Note: this is all the elemental awakening script mixed together so its easier to choose"
@@ -138,15 +139,15 @@ end)
 
 -- Scripts:
 
-local function PVWN_fake_script() -- AutoFarm.Auto Farm 
+local function TRXBAE_fake_script() -- AutoFarm.Auto Farm 
 	local script = Instance.new('LocalScript', AutoFarm)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/xxsfytd/autofarm-elemental-awakening-/main/Auto%20farm'))()
 	end)
 end
-coroutine.wrap(PVWN_fake_script)()
-local function ADPYV_fake_script() -- FastSpin.Fast Spin 
+coroutine.wrap(TRXBAE_fake_script)()
+local function IMCZHS_fake_script() -- FastSpin.Fast Spin 
 	local script = Instance.new('LocalScript', FastSpin)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -154,16 +155,16 @@ local function ADPYV_fake_script() -- FastSpin.Fast Spin
 	end)
 	
 end
-coroutine.wrap(ADPYV_fake_script)()
-local function PWEFYMQ_fake_script() -- CurseGrabber.Curse Grabber 
+coroutine.wrap(IMCZHS_fake_script)()
+local function GMSPSHP_fake_script() -- CurseGrabber.Curse Grabber 
 	local script = Instance.new('LocalScript', CurseGrabber)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/xxsfytd/Curse-Grabber/main/Curse%20Grabber'))()
 	end)
 end
-coroutine.wrap(PWEFYMQ_fake_script)()
-local function BNPGTMT_fake_script() -- AntiAfk.Anti Afk 
+coroutine.wrap(GMSPSHP_fake_script)()
+local function UCHP_fake_script() -- AntiAfk.Anti Afk 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -171,4 +172,4 @@ local function BNPGTMT_fake_script() -- AntiAfk.Anti Afk
 	end)
 	
 end
-coroutine.wrap(BNPGTMT_fake_script)()
+coroutine.wrap(UCHP_fake_script)()
