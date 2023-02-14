@@ -1,0 +1,174 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local bababoi = Instance.new("ScreenGui")
+local good = Instance.new("Frame")
+local ddddd = Instance.new("ScrollingFrame")
+local AutoFarm = Instance.new("TextButton")
+local FastSpin = Instance.new("TextButton")
+local CurseGrabber = Instance.new("TextButton")
+local AntiAfk = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Close = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local LabelText = Instance.new("TextLabel")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+bababoi.Name = "bababoi"
+bababoi.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+bababoi.ResetOnSpawn = false
+
+good.Name = "good"
+good.Parent = bababoi
+good.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+good.Position = UDim2.new(0.322701693, 0, 0.305220902, 0)
+good.Size = UDim2.new(0, 437, 0, 233)
+good.Draggable = true
+
+ddddd.Name = "ddddd"
+ddddd.Parent = good
+ddddd.Active = true
+ddddd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ddddd.Position = UDim2.new(0.0251716245, 0, 0.30901289, 0)
+ddddd.Size = UDim2.new(0, 417, 0, 147)
+ddddd.ScrollBarThickness = 5
+
+AutoFarm.Name = "Auto Farm"
+AutoFarm.Parent = ddddd
+AutoFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.Size = UDim2.new(0, 104, 0, 43)
+AutoFarm.Font = Enum.Font.SourceSans
+AutoFarm.Text = "Auto Farm (when you activate this with a exotic or legend or heavenly it will be gone)"
+AutoFarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoFarm.TextScaled = true
+AutoFarm.TextSize = 14.000
+AutoFarm.TextWrapped = true
+
+FastSpin.Name = "Fast Spin"
+FastSpin.Parent = ddddd
+FastSpin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FastSpin.Size = UDim2.new(0, 104, 0, 43)
+FastSpin.Font = Enum.Font.SourceSans
+FastSpin.Text = "Fast Spin (same as the auto farm)"
+FastSpin.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastSpin.TextScaled = true
+FastSpin.TextSize = 14.000
+FastSpin.TextWrapped = true
+
+CurseGrabber.Name = "Curse Grabber"
+CurseGrabber.Parent = ddddd
+CurseGrabber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CurseGrabber.Size = UDim2.new(0, 104, 0, 43)
+CurseGrabber.Font = Enum.Font.SourceSans
+CurseGrabber.Text = "Curse Grabber"
+CurseGrabber.TextColor3 = Color3.fromRGB(0, 0, 0)
+CurseGrabber.TextScaled = true
+CurseGrabber.TextSize = 14.000
+CurseGrabber.TextWrapped = true
+
+AntiAfk.Name = "Anti Afk"
+AntiAfk.Parent = ddddd
+AntiAfk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.Size = UDim2.new(0, 104, 0, 43)
+AntiAfk.Font = Enum.Font.SourceSans
+AntiAfk.Text = "Anti Afk"
+AntiAfk.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAfk.TextScaled = true
+AntiAfk.TextSize = 14.000
+AntiAfk.TextWrapped = true
+
+UIGridLayout.Parent = ddddd
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 4, 0, 4)
+UIGridLayout.CellSize = UDim2.new(0, 99, 0, 50)
+
+Close.Name = "Close"
+Close.Parent = good
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.Position = UDim2.new(0.876430213, 0, 0, 0)
+Close.Size = UDim2.new(0, 54, 0, 41)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "Close"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+Close.MouseButton1Click:Connect(function()
+	good.Visible = false
+	Open.Visible = true
+end)
+
+TextLabel.Parent = bababoi
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.333020627, 0, 0.323293179, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "elemental awakening"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+LabelText.Name = "LabelText"
+LabelText.Parent = bababoi
+LabelText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LabelText.Position = UDim2.new(0.530018806, 0, 0.339357436, 0)
+LabelText.Size = UDim2.new(0, 151, 0, 42)
+LabelText.Font = Enum.Font.SourceSans
+LabelText.Text = "Note: this is all the elemental awakening script mixed together so its easier to choose"
+LabelText.TextColor3 = Color3.fromRGB(0, 0, 0)
+LabelText.TextScaled = true
+LabelText.TextSize = 14.000
+LabelText.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = bababoi
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0.949343324, 0, 0.497991949, 0)
+Open.Size = UDim2.new(0, 54, 0, 41)
+Open.Visible = false
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 14.000
+Open.MouseButton1Click:Connect(function()
+	good.Visible = true
+	Open.Visible = false
+end)
+
+-- Scripts:
+
+local function PVWN_fake_script() -- AutoFarm.Auto Farm 
+	local script = Instance.new('LocalScript', AutoFarm)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/xxsfytd/autofarm-elemental-awakening-/main/Auto%20farm'))()
+	end)
+end
+coroutine.wrap(PVWN_fake_script)()
+local function ADPYV_fake_script() -- FastSpin.Fast Spin 
+	local script = Instance.new('LocalScript', FastSpin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/xxsfytd/Fast-Spin/main/Fast%20Spin'))()
+	end)
+	
+end
+coroutine.wrap(ADPYV_fake_script)()
+local function PWEFYMQ_fake_script() -- CurseGrabber.Curse Grabber 
+	local script = Instance.new('LocalScript', CurseGrabber)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/xxsfytd/Curse-Grabber/main/Curse%20Grabber'))()
+	end)
+end
+coroutine.wrap(PWEFYMQ_fake_script)()
+local function BNPGTMT_fake_script() -- AntiAfk.Anti Afk 
+	local script = Instance.new('LocalScript', AntiAfk)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
+	end)
+	
+end
+coroutine.wrap(BNPGTMT_fake_script)()
